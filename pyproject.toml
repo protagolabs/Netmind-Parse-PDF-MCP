@@ -1,0 +1,27 @@
+[project]
+name = "netmind-parse-pdf-mcp"
+version = "0.1.1"
+description = "A Model Context Protocol (MCP) server that parses PDF files from a given URL into structured formats"
+authors = [
+    {name = "yanrujing", email = "rujing.yan@protagonist-ai.com"}
+]
+repository = "https://github.com/protagolabs/Netmind-Parse-PDF-MCP"
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp (>=1.6.0,<2.0.0)",
+    "httpx (>=0.28.1,<0.29.0)"
+]
+
+packages = [{ include = "src/netmind_parse_pdf_mcp" }]
+
+
+[tool.poetry.scripts]
+netmind-parse-pdf-mcp = "netmind_parse_pdf_mcp:main"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
