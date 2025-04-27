@@ -7,9 +7,9 @@ import asyncio
 
 server = StdioServerParameters(
     command='uvx',
-    args=['netmind_parse_pdf_mcp'],
+    args=['netmind-parse-pdf-mcp'],
     env={
-        "NETMIND_API_TOKE": "NETMIND_API_TOKE"
+        "NETMIND_API_TOKEN": "your_netmind_api_token"
     }
 )
 
