@@ -1,6 +1,6 @@
 [project]
 name = "netmind-parse-pdf-mcp"
-version = "0.1.3"
+version = "0.1.5"
 description = "A Model Context Protocol (MCP) server that parses PDF files from a given URL into structured formats"
 authors = [
     {name = "yanrujing", email = "rujing.yan@protagonist-ai.com"}
