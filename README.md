@@ -44,14 +44,18 @@ You can obtain an API key from [Netmind](https://www.netmind.ai/user/apiToken)
 Add this tool as a mcp server by editing the Cursor/Claude config file.
 
 ```json
-"parse-pdf": {
-  "env": {
-    "NETMIND_API_TOKEN": "XXXXXXXXXXXXXXXXXXXX",
-  },
-  "command": "uvx",
-  "args": [
-    "netmind-parse-pdf-mcp"
-  ]
+{
+  "mcpServers": {
+    "parse-pdf": {
+      "env": {
+        "NETMIND_API_TOKEN": "XXXXXXXXXXXXXXXXXXXX"
+      },
+      "command": "uvx",
+      "args": [
+        "netmind-parse-pdf-mcp"
+      ]
+    }
+  }
 }
 ```
 
