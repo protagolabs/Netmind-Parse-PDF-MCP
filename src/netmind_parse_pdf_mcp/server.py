@@ -10,7 +10,7 @@ NETMIND_API_TOKEN = os.getenv("NETMIND_API_TOKEN")
 API_URL = "https://api.netmind.ai/inference-api/agent/v1/parse-pdf"
 
 
-@mcp.tool(description="Parse PDF files from a given URL and extract content in JSON or Markdown format. ")
+@mcp.tool()
 async def parse_pdf(url: str, format: Literal["json", "markdown"] = "json"):
     """
     Parses a PDF file and returns the extracted content in the specified format.
