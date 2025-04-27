@@ -41,7 +41,7 @@ You can obtain an API key from [Netmind](https://www.netmind.ai/user/apiToken)
 
 ### Cursor & Claude Desktop && Windsurf Installation
 
-Add this tool as a mcp server by editing the Cursor/Claude config file.
+Add this tool as a mcp server by editing the Cursor/Claude/Windsurf config file.
 
 ```json
 {
@@ -68,3 +68,9 @@ Add this tool as a mcp server by editing the Cursor/Claude config file.
 
 - On MacOS: `~/Library/Application\ Support/Claude/claude_desktop_config.json`
 - On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
+
+
+### Windsurf
+
+- On MacOS: `/Users/your-username/.codeium/windsurf/mcp_config.json`
+- On Windows: `C:\Users\your-username\.codeium\windsurf\mcp_config.json`
