@@ -21,6 +21,22 @@ async def main():
             response = await session.list_tools()
             tools = [dict(t) for t in response.tools]
             print(json.dumps(tools, indent=4, ensure_ascii=False))
+            res = await session.call_tool(
+                'parse_pdf',
+                {
+                    'url': 'https://netmind-public-files.s3.us-west-2.amazonaws.com/tmp/output.pdf',
+                    'format': 'json'
+                }
+            )
+            print(res)
+            res = await session.call_tool(
+                'parse_pdf',
+                {
+                    'url': 'https://netmind-public-files.s3.us-west-2.amazonaws.com/tmp/output.pdf',
+                    'format': 'markdown'
+                }
+            )
+            print(res)
 
 
 if __name__ == "__main__":
