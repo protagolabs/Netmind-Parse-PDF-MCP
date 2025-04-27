@@ -50,7 +50,7 @@ Add this tool as a mcp server by editing the Cursor/Claude config file.
   },
   "command": "uvx",
   "args": [
-    "netmind_parse_pdf_mcp"
+    "netmind-parse-pdf-mcp"
   ]
 }
 ```
