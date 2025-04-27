@@ -6,8 +6,11 @@ from mcp.server.fastmcp import FastMCP
 
 
 mcp = FastMCP("parse-pdf")
-NETMIND_API_TOKEN = os.getenv("NETMIND_API_TOKEN")
-API_URL = "https://api.netmind.ai/inference-api/agent/v1/parse-pdf"
+NETMIND_API_TOKEN = os.getenv.get("NETMIND_API_TOKEN")
+API_URL = os.environ.get(
+    "API_URL"
+    "https://api.netmind.ai/inference-api/agent/v1/parse-pdf"
+)
 
 
 @mcp.tool()
