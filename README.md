@@ -1,5 +1,8 @@
 # NetMind ParsePro
 
+> - **MCP Certified** – Verified by [MCP Review](https://mcpreview.com/mcp-servers/protagolabs/netmind-parse-pdf-mcp)
+
+
 The PDF Parser AI service, built and customized by the [NetMind](https://netmind.ai) team, is a high-quality, robust,
 and cost-efficient solution for converting PDF files from a given URL into specified output formats such as JSON and Markdown.
 It is fully MCP server–ready, allowing seamless integration with AI agents.
