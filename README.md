@@ -11,8 +11,12 @@ It is fully MCP server–ready, allowing seamless integration with AI agents.
 
 ### Tools
 
-- parse_pdf: Parse PDF files from a given URL and extract content in JSON or Markdown format.
-    - url: required: A file url (string) pointing to a PDF file accessible via HTTP(S)
+- parse_pdf: Parses a PDF file and returns the extracted content in the specified format. 
+  The tools supports both local file paths and remote URLs as input sources.
+  It extracts the content from the PDF and formats it either as structured JSON or as a Markdown string.
+    - source: required: The source of the PDF file to be parsed.
+      - If it is a string starting with "http://" or "https://", it will be treated as a remote URL.
+      - Otherwise, it will be treated as a local file path (absolute path recommended, e.g. "/Users/yourname/file.pdf").
     - format: the desired format for the parsed output. Supports: "json", "markdown"
     - Returns the extracted content in the specified format (JSON dictionary or Markdown string).
 
