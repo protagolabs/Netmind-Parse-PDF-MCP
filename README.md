@@ -1,4 +1,5 @@
 # NetMind ParsePro
+> - **Try playground [here](https://www.netmind.ai/AIServices/parse-pdf)**
 > - **Listed on** [NetMind AI Services](https://www.netmind.ai/AIServices/parse-pdf)
 > - **Verified by** [MCP Review](https://mcpreview.com/mcp-servers/protagolabs/netmind-parse-pdf-mcp)
 
